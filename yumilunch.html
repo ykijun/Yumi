@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<body>
+	<input type="button" id="hw" value="오늘 뭐먹지" />
+    <script type="text/javascript">
+var arr = [
+	{
+		quote: "닭한마리!",
+		author: "아싸 오늘은 치킨이닭!"
+	},
+	{
+		quote: "멸치칼국수",
+		author: "칼국수는 역시 멸치 칼국수"
+	},
+	{
+		quote: "서브웨이",
+		author: "다이어트도 좋은데 든든하게 먹어요~"
+	},
+	{
+		quote: "버거킹",
+		author: "오늘은 무슨 버거를 먹어야 할까?"
+	},
+	{
+		quote: "이삭토스트",
+		author: "아브라함의 아들, 하나님께 바치는 이삭"
+	},
+{
+		quote: "공식당",
+		author: "한국사람은 역시 밥심이지~"
+	},
+{
+		quote: "편의점",
+		author: "오늘은 진짜 먹을게 없나보다.."
+	},
+{
+		quote: "팥앤호박",
+		author: "아플때만 죽먹는거 아니야~!!"
+	},
+{
+		quote: "시골밥상",
+		author: "엄마가 해준 집밥 느낌이려나.. ㅎㅎ"
+	},
+{
+		quote: "무아국수",
+		author: "국수나 차돌된장을 먹어봅시다"
+	},
+{
+		quote: "회기버거",
+		author: "교회 앞에?? 아니 종암점!"
+	},
+];
+        var hw = document.getElementById('hw');
+        hw.addEventListener('click', function(){
+            var random = Math.floor(Math.random() * arr.length);
+
+	quote.textContent = arr[random].quote;
+	author.textContent = arr[random].author;
+        })
+    </script>
+	<h1 id="quote">오늘 뭐먹지?</h1>
+	<span id="author">메뉴가 고민이구만</span>
+</body>
+
